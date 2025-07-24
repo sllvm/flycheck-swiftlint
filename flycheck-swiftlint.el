@@ -65,7 +65,7 @@
                           "error: " (message) line-end)
                    (warning line-start (file-name) ":" line ":" column ": "
                             "warning: " (message) line-end))
-  :modes (swift-mode)
+  :modes (swift-mode swift-ts-mode)
   :predicate
   (lambda ()
     (funcall flycheck-swiftlint-should-run-swiftlint-function))
